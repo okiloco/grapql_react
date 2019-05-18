@@ -1,0 +1,19 @@
+query getCoureWithFragments($id1:Int!,$id2:Int!){
+  course1:course(id:$id1){
+    ...courseFields
+  }
+  course2:course(id:$id2){
+    ...courseFields
+  }
+}
+fragment courseFields on Course{
+  title
+  author
+  topic
+  url
+}
+...................
+{
+  "id1": 1,
+  "id2": 2
+}

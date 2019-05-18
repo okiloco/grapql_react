@@ -1,0 +1,12 @@
+query getCourses($topic:String){
+  courses(topic:$topic){
+    title
+    author
+    topic
+    url
+  }
+}
+.........................
+{
+  "topic": "python"
+}

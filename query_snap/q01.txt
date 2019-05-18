@@ -1,0 +1,15 @@
+query getSingleCourse($id:Int!){
+  course(id:$id){
+    title
+    author
+    topic
+    url
+  }
+}
+
+------
+QUERY VARIABLES:
+------
+{
+  "id": 3
+}
